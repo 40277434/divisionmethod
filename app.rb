@@ -6,7 +6,9 @@ set :port, 80
 
 get '/' do
 x=params[:x]
+x=x.to_i
 y=params[:y]
+y=y.to_i
 response ={
 'answer'=>x/y
 }
