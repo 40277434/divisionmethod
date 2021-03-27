@@ -9,8 +9,11 @@ x=params[:x]
 x=x.to_i
 y=params[:y]
 y=y.to_i
+answer=x/y
 response ={
-'answer'=>x/y
+'answer'=>answer
+'string'=>x+"/"+y+"="+answer
+'error'=>true
 }
 
 JSON[response]
