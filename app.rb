@@ -13,7 +13,7 @@ answer=x_i/y_i
 response ={
 'answer'=>answer,
 'string'=>x+"/"+y+"="+answer.to_s,
-'error'=>true
+'error'=>false
 }
 
 JSON[response]
