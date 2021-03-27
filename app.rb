@@ -6,13 +6,13 @@ set :port, 80
 
 get '/' do
 x=params[:x]
-x=x.to_i
+x_i=x.to_i
 y=params[:y]
-y=y.to_i
-answer=x/y
+y_i=y.to_i
+answer=x_i/y_i
 response ={
-'answer'=>answer
-'string'=>x+"/"+y+"="+answer
+'answer'=>answer,
+'string'=>x+"/"+y+"="+answer.to_s,
 'error'=>true
 }
 
